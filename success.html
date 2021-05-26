@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="frontend/libraries/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css" />
+    <link rel="stylesheet" href="frontend/libraries/gijgo/css/gijgo.min.css" />
+    <link rel="stylesheet" href="frontend/libraries/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="frontend/styles/css/main.css" />
+  </head>
+  <body>
+    <!-- START SECTION NAVBAR -->
+    <section class="section-navbar">
+      <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-dark">
+          <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+            <a href="index.html" class="navbar-brand">
+              <img src="frontend/images/logo-zworld.png" alt="Logo ZWORLD" />
+            </a>
+          </div>
+          <ul class="navbar-nav mr-auto d-none d-lg-block">
+            <li>
+              <span class="text-blue">
+                | &nbsp; Making your trip fun with us
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- END SECTION NAVBAR -->
+    <div class="ilustration-checkout-status d-flex align-items-center">
+      <div class="col text-center">
+        <img
+          src="frontend/images/ic-checkout-success.png"
+          alt="ic-checkout-success"
+        />
+
+        <h2>Yay ! Success</h2>
+        <p>
+          We've send you email for trip <br />
+          instructions please read is as well
+        </p>
+        <a href="index.html" class="btn btn-blue px-4">Home Page</a>
+      </div>
+    </div>
+
+    <script src="frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/bootstrap/js/popper.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+    <script src="frontend/libraries/font-awesome/js/all.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script src="frontend/libraries/gijgo/js/gijgo.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".xzoom, .xzoom-gallery").xzoom({
+          zoomWidth: 500,
+          title: false,
+          tint: "#333",
+          Xoffset: 5,
+        });
+
+        $(".datepicker").datepicker({
+          uiLibrary: "bootstrap4",
+          icons: {
+            rightIcon:
+              '<i class="far fa-calendar-alt" style="color:#071C4D;"></i>',
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

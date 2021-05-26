@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="frontend/libraries/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css" />
+    <link rel="stylesheet" href="frontend/libraries/gijgo/css/gijgo.min.css" />
+    <link rel="stylesheet" href="frontend/libraries/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="frontend/styles/css/main.css" />
+  </head>
+  <body>
+    <!-- START SECTION NAVBAR -->
+    <section class="section-navbar bg-nzworld">
+      <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-dark">
+          <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+            <a href="index.html" class="navbar-brand">
+              <img
+                src="frontend/images/logo-zworld-light.png"
+                alt="Logo ZWORLD"
+              />
+            </a>
+          </div>
+          <ul class="navbar-nav mr-auto d-none d-lg-block">
+            <li>
+              <span class="text-white">
+                | &nbsp; Making your trip fun with us
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- END SECTION NAVBAR -->
+    <main>
+      <!-- START SECTION DETAIL HEADER -->
+      <section class="section-details-header"></section>
+      <div class="section-details-content">
+        <div class="container">
+          <div class="row">
+            <div class="col p-0">
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">Travel Package</li>
+                  <li class="breadcrumb-item">Details</li>
+                  <li class="breadcrumb-item active">Checkout</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 pl-lg-0">
+              <div class="card card-details">
+                <h1>Who is going ?</h1>
+                <p>Trip to Fuji, Japan</p>
+                <div class="attendee">
+                  <table class="table table-responsive-sm text-center">
+                    <thead>
+                      <tr>
+                        <td>Picture</td>
+                        <td>Name</td>
+                        <td>Nationality</td>
+                        <td>VISA</td>
+                        <td>Passport</td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img
+                            src="frontend/images/avatar-1.png"
+                            alt="avatar-attendee"
+                            width="40"
+                            height="40"
+                            class="rounded"
+                          />
+                        </td>
+                        <td class="align-middle">Angeline Septhi</td>
+                        <td class="align-middle">US</td>
+                        <td class="align-middle">N/A</td>
+                        <td class="align-middle">Active</td>
+                        <td class="align-middle">
+                          <a href="#">
+                            <i class="far fa-times-circle"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            src="frontend/images/avatar-2.png"
+                            alt="avatar-attendee"
+                            width="40"
+                            height="40"
+                            class="rounded"
+                          />
+                        </td>
+                        <td class="align-middle">Caroline Ahmad</td>
+                        <td class="align-middle">IND</td>
+                        <td class="align-middle">30 Days</td>
+                        <td class="align-middle">Active</td>
+                        <td class="align-middle">
+                          <a href="#">
+                            <i class="far fa-times-circle"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="member mt-3">
+                  <h6>Add Member</h6>
+                  <form class="form-inline">
+                    <label for="inputUsername" class="sr-only">Name</label>
+                    <input
+                      type="text"
+                      class="form-control mb-2 mr-sm-2"
+                      id="inputUsername"
+                      placeholder="Username"
+                      name="inputUsername"
+                    />
+                    <label for="inputVisa" class="sr-only">VISA</label>
+                    <select
+                      name="inputVisa"
+                      id="inputVisa"
+                      class="custom-select mb-2 mr-sm-2"
+                    >
+                      <option value="VISA" selected>VISA</option>
+                      <option value="30 Days">30 Days</option>
+                      <option value="N/A">N/A</option>
+                    </select>
+                    <label for="doePassport" class="sr-only"
+                      >DOE Passport</label
+                    >
+                    <div class="input-group mb-2 mr-sm-2">
+                      <input
+                        type="text"
+                        class="form-control datepicker"
+                        id="doePassport"
+                        placeholder="DOE Passport"
+                      />
+                    </div>
+                    <button type="submit" class="btn btn-add-now mb-2 px-4">
+                      Add Now
+                    </button>
+                  </form>
+                </div>
+                <div
+                  class="alert alert-secondary note-members mt-3"
+                  role="alert"
+                >
+                  <h5 class="alert-heading mb-0">Note</h5>
+                  <p class="text-muted mb-0">
+                    You are only able to invite member that has registered in
+                    Zworld
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 pl-lg-0">
+              <div class="card card-details card-right">
+                <h2>Checkout Informations</h2>
+                <table class="trip-informations">
+                  <tr>
+                    <th width="50%">Member</th>
+                    <td width="50%" class="text-right">2 Person</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Additional VISA</th>
+                    <td width="50%" class="text-right">$190,00</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Trip Price</th>
+                    <td width="50%" class="text-right">$80,00/person</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Total Price</th>
+                    <td width="50%" class="text-right">$ 280,00</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Total (+Unique Code)</th>
+                    <td width="50%" class="text-right align-middle">
+                      <span class="text-blue">$ 281,</span>
+                      <span class="text-orange">33</span>
+                    </td>
+                  </tr>
+                </table>
+                <hr />
+                <h2 class="mb-0">Payments Instructions</h2>
+                <p>Please complete the payment before you continue the trip.</p>
+                <div class="bank">
+                  <div class="bank-item d-flex justify-content-start mb-2">
+                    <img
+                      width="45"
+                      height="45"
+                      src="frontend/images/ic-payments.png"
+                      alt="ic-bank"
+                      class="bank-image"
+                    />
+                    <div class="description ml-2">
+                      <h3 class="mb-0">PT ZWORLD Indonesia</h3>
+                      <p class="mb-0">
+                        Bank Central Asia
+                        <br />
+                        5456 4568 252
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bank-item d-flex justify-content-start">
+                    <img
+                      width="45"
+                      height="45"
+                      src="frontend/images/ic-payments.png"
+                      alt="ic-bank"
+                      class="bank-image"
+                    />
+                    <div class="description ml-2">
+                      <h3 class="mb-0">PT ZWORLD Indonesia</h3>
+                      <p class="mb-0">
+                        Bank Central Asia
+                        <br />
+                        5456 4568 252
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="join-container">
+                <a
+                  href="success.html"
+                  class="btn btn-block btn-join-now mt-3 mb-0 py-2"
+                >
+                  I Have Made Payment
+                </a>
+                <a
+                  href="details.html"
+                  class="btn btn-block py-2 mt-0 btn-cancel"
+                >
+                  Cancel
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END SECTION DETAIL HEADER -->
+    </main>
+    <!-- START FOOTER -->
+    <footer class="section-footer mt-5 mb-4 border-top">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-lg-3">
+                <h5>FEATURES</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Reviews</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Social Media Kit</a></li>
+                  <li><a href="#">Affiliate</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>ACCOUNT</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Refund</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Rewards</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>COMPANY</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Media</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>GET CONNECTED</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Jakarta Selatan</a></li>
+                  <li><a href="#">Indonesia</a></li>
+                  <li><a href="#">0821-2222-6666</a></li>
+                  <li><a href="#">support@zworld.id</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div
+          class="row border-top justify-content-center align-items-center pt-4"
+        >
+          <div class="col-auto text-gray-500 font-weight-light">
+            <small class="copyright">
+              2019 Copyright <a href="index.html">Zworld</a> • All rights
+              reserved • Made in Yogyakarta</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/bootstrap/js/popper.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+    <script src="frontend/libraries/font-awesome/js/all.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script src="frontend/libraries/gijgo/js/gijgo.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".xzoom, .xzoom-gallery").xzoom({
+          zoomWidth: 500,
+          title: false,
+          tint: "#333",
+          Xoffset: 5,
+        });
+
+        $(".datepicker").datepicker({
+          uiLibrary: "bootstrap4",
+          icons: {
+            rightIcon:
+              '<i class="far fa-calendar-alt" style="color:#071C4D;"></i>',
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

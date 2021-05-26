@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="frontend/libraries/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="frontend/libraries/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="frontend/styles/css/main.css" />
+  </head>
+  <body id="page-top">
+    <!-- START SECTION NAVBAR -->
+    <a class="scroll-to-top js-scroll-trigger rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+    <section class="section-navbar">
+      <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-dark">
+          <a href="index.html" class="navbar-brand">
+            <img
+              src="frontend/images/logo-zworld-light.png"
+              alt="Logo ZWORLD"
+            />
+          </a>
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navb"
+            aria-controls="navb"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navb">
+            <ul class="navbar-nav ml-auto mr-3">
+              <li class="nav-item mx-md-2">
+                <a href="index.html" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item mx-md-2">
+                <a href="#popularContent" class="nav-link js-scroll-trigger"
+                  >Travel Package</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="navbardrop"
+                  data-toggle="dropdown"
+                >
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbardrop">
+                  <a href="#" class="dropdown-item">Link 1</a>
+                  <a href="#" class="dropdown-item">Link 2</a>
+                  <a href="#" class="dropdown-item">Link 3</a>
+                </div>
+              </li>
+              <li class="nav-item mx-md-2">
+                <a href="#testimonialHeading" class="nav-link js-scroll-trigger"
+                  >Testimonials</a
+                >
+              </li>
+            </ul>
+            <!-- Mobile Button -->
+            <form class="form-inline d-sm-block d-md-none">
+              <button class="btn btn-signin my-2 my-sm-0">Sign In</button>
+            </form>
+            <!-- Desktop Button -->
+            <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+              <button class="btn btn-signin btn-navbar-right my-2 my-sm-0 px-4">
+                Sign In
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- END SECTION NAVBAR -->
+    <!-- START SECTION HEADER -->
+    <header class="section-header text-center">
+      <h1>
+        Explore the Beautiful World
+        <br />
+        As Easy One Click
+      </h1>
+      <p class="mt-3">
+        You will see beautiful
+        <br />
+        world that you never see
+      </p>
+      <a
+        href="#popularContent"
+        class="btn btn-get-started px-4 mt-4 js-scroll-trigger"
+        id
+        >Get Started</a
+      >
+    </header>
+    <!-- END SECTION HEADER -->
+    <main>
+      <div class="container">
+        <!-- START SECTION STATISTIK -->
+        <section class="section-stats row justify-content-center" id="stats">
+          <div class="col-3 col-md-2 text-center stats-detail">
+            <h2>20K</h2>
+            <p>MEMBERS</p>
+          </div>
+          <div class="col-3 col-md-2 text-center stats-detail">
+            <h2>250</h2>
+            <p>COUNTRIES</p>
+          </div>
+          <div class="col-3 col-md-2 text-center stats-detail">
+            <h2>10K</h2>
+            <p>HOTELS</p>
+          </div>
+          <div class="col-3 col-md-2 text-center stats-detail">
+            <h2>9</h2>
+            <p>PARTNERS</p>
+          </div>
+        </section>
+        <!-- END SECTION STATISTIK -->
+      </div>
+      <!-- START SECTION POPULAR -->
+      <section class="section-popular" id="popular">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center section-popular-heading">
+              <h2>Popular<br />Destinations</h2>
+              <p>
+                Something that you never try <br />
+                before in this world
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-popular-content" id="popularContent">
+        <div class="container">
+          <div class="section-popular-travel justify-content-center row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="card-travel text-center d-flex flex-column rounded"
+                style="background-image: url('frontend/images/popular-1.png')"
+              >
+                <div class="travel-country">INDONESIA</div>
+                <div class="travel-location">Ubud, Bali</div>
+                <div class="travel-button mt-auto">
+                  <a href="details.html" class="btn btn-travel-details px-4"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="card-travel text-center d-flex flex-column rounded"
+                style="background-image: url('frontend/images/popular-2.png')"
+              >
+                <div class="travel-country">LONDON</div>
+                <div class="travel-location">Big Ben</div>
+                <div class="travel-button mt-auto">
+                  <a href="details.html" class="btn btn-travel-details px-4"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="card-travel text-center d-flex flex-column rounded"
+                style="background-image: url('frontend/images/popular-3.png')"
+              >
+                <div class="travel-country">UNITED STATES</div>
+                <div class="travel-location">Hollywood</div>
+                <div class="travel-button mt-auto">
+                  <a href="details.html" class="btn btn-travel-details px-4"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="card-travel text-center d-flex flex-column rounded"
+                style="background-image: url('frontend/images/popular-4.png')"
+              >
+                <div class="travel-country">JAPAN</div>
+                <div class="travel-location">Fuji Mountain</div>
+                <div class="travel-button mt-auto">
+                  <a href="details.html" class="btn btn-travel-details px-4"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END SECTION POPULAR -->
+      <!-- START SECTION PARTNERS -->
+      <section class="section-partners" id="partners">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4 text-center text-md-left">
+              <h2>Our Networks</h2>
+              <p>
+                Something that you never try
+                <br />
+                before in this world
+              </p>
+            </div>
+            <div class="col-12 py-3 py-md-0 col-md-2 text-center">
+              <img
+                src="frontend/images/logo/Emirates_Airlines.png"
+                alt="partner-emirates"
+                class="img-partner"
+              />
+            </div>
+            <div class="col-12 py-3 py-md-0 col-md-2 text-center">
+              <img
+                src="frontend/images/logo/palms-casino.png"
+                alt="partner-emirates"
+                class="img-partner"
+              />
+            </div>
+            <div class="col-12 py-3 py-md-0 col-md-2 text-center">
+              <img
+                src="frontend/images/logo/visa.png"
+                alt="partner-emirates"
+                class="img-partner"
+              />
+            </div>
+            <div class="col-12 py-3 py-md-0 col-md-2 text-center">
+              <img
+                src="frontend/images/logo/universal-studios.png"
+                alt="partner-emirates"
+                class="img-partner"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END SECTION PARTNERS -->
+      <!-- START SECTION TESTIMONIALS -->
+      <section class="section-testimonial-heading" id="testimonialHeading">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center testimonial-heading">
+              <h2>They're Loving Us</h2>
+              <p>
+                Moments were giving them
+                <br />
+                the best experience
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-testimonial-content" id="testimonialContent">
+        <div class="container">
+          <div class="section-popular-travel row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="card card-testimonial text-center">
+                <div class="testimonial-content">
+                  <img
+                    src="frontend/images/user/user-1.png"
+                    alt="user"
+                    class="mb-4 rounded-circle"
+                  />
+                  <h3 class="mb-4">Shelin</h3>
+                  <div class="rating justify-content-center mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <p>
+                    " It was glorious and I could not stop say waooow for every
+                    single moment gracias thanks for the Services ! "
+                  </p>
+                </div>
+                <hr />
+                <p class="trip-to mt-1">Trip to Ubud</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="card card-testimonial text-center">
+                <div class="testimonial-content">
+                  <img
+                    src="frontend/images/user/user-2.png"
+                    alt="user"
+                    class="mb-4 rounded-circle"
+                  />
+                  <h3 class="mb-4">Mariana</h3>
+                  <div class="rating justify-content-center mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <p>
+                    " It was glorious and I could not stop say waooow for every
+                    single moment gracias ! "
+                  </p>
+                </div>
+                <hr />
+                <p class="trip-to mt-2">Trip to Ubud</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="card card-testimonial text-center">
+                <div class="testimonial-content">
+                  <img
+                    src="frontend/images/user/user-3.png"
+                    alt="user"
+                    class="mb-4 rounded-circle"
+                  />
+                  <h3 class="mb-4">Angeline</h3>
+                  <div class="rating justify-content-center mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <p>
+                    " It was glorious and I could not stop say waooow for every
+                    single moment gracias ! "
+                  </p>
+                </div>
+                <hr />
+                <p class="trip-to mt-2">Trip to Ubud</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <a href="#" class="btn btn-light btn-need-help px-4 mt-4 mx-1"
+                >I Need Help</a
+              >
+              <a
+                href="#popularContent"
+                class="btn btn-get-started px-4 mt-4 mx-1 js-scroll-trigger"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END SECTION TESTIMONIALS -->
+    </main>
+    <!-- START FOOTER -->
+    <footer class="section-footer mt-5 mb-4 border-top">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-lg-3">
+                <h5>FEATURES</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Reviews</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Social Media Kit</a></li>
+                  <li><a href="#">Affiliate</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>ACCOUNT</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Refund</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Rewards</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>COMPANY</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Media</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>GET CONNECTED</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Jakarta Selatan</a></li>
+                  <li><a href="#">Indonesia</a></li>
+                  <li><a href="#">0821-2222-6666</a></li>
+                  <li><a href="#">support@zworld.id</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div
+          class="row border-top justify-content-center align-items-center pt-4"
+        >
+          <div class="col-auto text-gray-500 font-weight-light">
+            <small class="copyright">
+              2019 Copyright <a href="index.html">Zworld</a> • All rights
+              reserved • Made in Yogyakarta</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/bootstrap/js/popper.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+    <script src="frontend/libraries/font-awesome/js/all.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script>
+      /*!
+       * Start Bootstrap - Agency v6.0.3 (https://startbootstrap.com/theme/agency)
+       * Copyright 2013-2020 Start Bootstrap
+       * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
+       */
+      (function ($) {
+        "use strict"; // Start of use strict
+
+        // Smooth scrolling using jQuery easing
+        $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+              $("html, body").animate(
+                {
+                  scrollTop: target.offset().top - 72,
+                },
+                1000,
+                "easeInOutExpo"
+              );
+              return false;
+            }
+          }
+        });
+
+        $(document).on("scroll", function () {
+          var scrollDistance = $(this).scrollTop();
+          if (scrollDistance > 100) {
+            $(".scroll-to-top").fadeIn();
+          } else {
+            $(".scroll-to-top").fadeOut();
+          }
+        });
+      })(jQuery); // End of use strict
+    </script>
+  </body>
+</html>
